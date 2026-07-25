@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aidmarketingagency.github.io/dcs-roofing-albemarle-d13/sitemap.xml
