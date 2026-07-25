@@ -30,316 +30,294 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- BASE:START (managed by Coding Agent — do not edit) -->
-<base href="/dcs-roofing-albemarle-d13/dcs-roofing-albemarle-d13/">
-<!-- BASE:END -->
-
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-
-
-
-
+<title>DC's Roofing Co: storm calls, answered | AID</title>
+<meta name="description" content="A working preview of DC's Roofing Co catching missed estimate calls in Albemarle NC. Built by AID Marketing Agency."/>
+<meta property="og:title" content="DC's Roofing Co: storm calls, answered"/>
+<meta property="og:description" content="Watch a missed hail-damage call become a booked estimate in real time. Built for DC's Roofing Co, Albemarle NC."/>
+<meta property="og:type" content="website"/>
 
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 
+<style>
+  :root{
+    --void:#14161A;
+    --panel:#1E222B;
+    --panel-hi:#252B37;
+    --teal:#17B3A6;
+    --teal-deep:#0e8a7f;
+    --teal-soft:rgba(23,179,166,.18);
+    --ink:#F1EDE4;
+    --ash:rgba(241,237,228,.55);
+    --ash-dim:rgba(241,237,228,.3);
+    --hair:rgba(241,237,228,.1);
+    --hair-soft:rgba(241,237,228,.06);
+    --accent:#17B3A6;
+  }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--void);
+    color:var(--ink);
+    font-family:'Archivo',-apple-system,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    position:relative;
+    padding-bottom:0;
+  }
+  h1,h2,h3,.display{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;letter-spacing:-.02em}
 
+  /* atmosphere: grain + teal glow */
+  body::before{
+    content:"";position:fixed;inset:-80px;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(860px 580px at 88% -8%, rgba(23,179,166,.13), transparent 62%),
+      radial-gradient(700px 600px at -10% 94%, rgba(14,138,127,.11), transparent 58%),
+      radial-gradient(520px 440px at 46% 38%, rgba(23,179,166,.04), transparent 60%);
+  }
+  body::after{
+    content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.038;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
 
-<!-- SEO Meta Tags -->
-<title>DC's Roofing Co: storm calls, answered | AID</title>
-<meta name="description" content="A working preview of DC" />
-<meta property="og:title" content="DC's Roofing Co: storm calls, answered | AID" />
-<meta property="og:description" content="A working preview of DC" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="DC's Roofing Co: storm calls, answered | AID" />
-<meta name="twitter:description" content="A working preview of DC" />
-<!-- End SEO Meta Tags -->
-<script data-lp-token-hydrate>
-(function(){try{
-  var slug="lp-mrzuqkrh-04ibn";
-  var SK='lp_access_'+slug;
-  var map={access_token:'lp_pw_',allowlist_access_token:'lp_al_',pin_access_token:'lp_pin_',paywall_access_token:'lp_paid_'};
-  var u=new URL(location.href);var found=null;var changed=false;
-  Object.keys(map).forEach(function(p){var v=u.searchParams.get(p);if(v){found=v;try{localStorage.setItem(map[p]+slug,v);}catch(e){}u.searchParams.delete(p);changed=true;}});
-  if(found){try{sessionStorage.setItem(SK,found);}catch(e){}}
-  else{try{if(!sessionStorage.getItem(SK)){var t=localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);if(t)sessionStorage.setItem(SK,t);}}catch(e){}}
-  if(changed){try{history.replaceState(null,'',u.toString());}catch(e){}}
-  function getTok(){try{return sessionStorage.getItem(SK)||localStorage.getItem('lp_pw_'+slug)||localStorage.getItem('lp_al_'+slug)||localStorage.getItem('lp_pin_'+slug)||localStorage.getItem('lp_paid_'+slug);}catch(e){return null;}}
-  function needsToken(url,method){if(!url)return false;var s=String(url);var m=(method||'GET').toUpperCase();var isSheetWrite=(m==='POST'||m==='PATCH'||m==='PUT'||m==='DELETE')&&/\/sheet-rows(\/|$|\?)/.test(s);var isSheetRead=/\/sheet-data(\/|$|\?)/.test(s);var isLlm=/\/api\/landing-pages\/public\/[^/]+\/(llm|llm-config)(\/|$|\?)/.test(s);return isSheetWrite||isSheetRead||isLlm;}
-  if(window.fetch){var _f=window.fetch;window.fetch=function(input,init){try{var url=typeof input==='string'?input:(input&&input.url)||'';var method=(init&&init.method)||(input&&input.method)||'GET';if(needsToken(url,method)){var tok=getTok();if(tok){init=init||{};var h=new Headers(init.headers||(typeof input!=='string'?input.headers:undefined)||{});if(!h.has('X-Landing-Page-Token'))h.set('X-Landing-Page-Token',tok);init.headers=h;}}}catch(e){}return _f.call(this,input,init);};}
-  if(window.XMLHttpRequest){var _o=XMLHttpRequest.prototype.open;var _s=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.open=function(m,u){this.__lpM=m;this.__lpU=u;return _o.apply(this,arguments);};XMLHttpRequest.prototype.send=function(){try{if(needsToken(this.__lpU,this.__lpM)){var tok=getTok();if(tok)this.setRequestHeader('X-Landing-Page-Token',tok);}}catch(e){}return _s.apply(this,arguments);};}
-}catch(e){}})();
-</script>
+  .wrap{position:relative;z-index:1;max-width:1160px;margin:0 auto;padding:0 22px}
 
-<script data-field-replace>
-(function(){
-  var params=new URLSearchParams(window.location.search);
-  var fields={};
-  var paramMap={
-    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
-    'email':'email','phone':'phone','company':'company',
-    'city':'city','state':'state','country':'country'
-  };
-  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
-  var hasUrlFields=false;
-  for(var p in paramMap){
-    var v=params.get(p);
-    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  /* ── Header ── */
+  header{padding:26px 0 8px}
+  .mast{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+  .brand{display:flex;align-items:center;gap:12px}
+  .roofmark{width:40px;height:34px;flex:none;color:var(--teal)}
+  .brand .name{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.13rem;letter-spacing:.01em;text-transform:uppercase;line-height:1}
+  .brand .loc{font-size:.64rem;color:var(--ash);text-transform:uppercase;letter-spacing:.18em;margin-top:4px}
+  .built-by{font-size:.67rem;color:var(--ash-dim);text-transform:uppercase;letter-spacing:.13em;text-align:right}
+  .built-by b{color:var(--ash);font-weight:700}
+
+  /* ── Hero: broken/asymmetric grid ── */
+  .hero{
+    display:grid;grid-template-columns:1.1fr .9fr;gap:10px;
+    padding:42px 0 12px;align-items:start;
   }
-  var contactId=params.get('contact_id');
-  function esc(s){
-    if(!s)return s;
-    var d=document.createElement('div');
-    d.appendChild(document.createTextNode(s));
-    return d.innerHTML;
+  .hero-copy{padding-top:14px;order:1}
+  .hero-demo{order:2}
+
+  /* Mobile-first attention contract (A1): demo panel first on small screens */
+  @media (max-width:820px){
+    .hero{grid-template-columns:1fr;gap:24px;padding-top:28px}
+    .hero-copy{order:3}
+    .hero-demo{order:2}
+    .hero-eyebrow-block{order:1}
+    body{padding-bottom:80px}
   }
-  function doReplace(data){
-    var r={};
-    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
-    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
-    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
-    r['{{email}}']=esc(data.email||'');
-    r['{{phone}}']=esc(data.phone||'');
-    r['{{company}}']=esc(data.company||'');
-    r['{{city}}']=esc(data.city||'');
-    r['{{state}}']=esc(data.state||'');
-    r['{{country}}']=esc(data.country||'');
-    r['{{date}}']=new Date().toLocaleDateString();
-    r['{{time}}']=new Date().toLocaleTimeString();
-    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
-    r['{{tracking_id}}']=esc(data.trackingId||'');
-    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
-    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
-    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
-    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
-    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
-    r['{{ip_address}}']=esc(data.ipAddress||'');
-    r['{{ip}}']=esc(data.ipAddress||'');
-    if(data.customFields){
-      for(var k in data.customFields){
-        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
-      }
-    }
-    params.forEach(function(v,k){
-      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
-        r['{{'+k+'}}']=esc(v);
-      }
-    });
-    var hasValues=false;
-    for(var key in r){if(r[key]){hasValues=true;break;}}
-    if(!hasValues)return;
-    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
-      acceptNode:function(n){
-        var p=n.parentNode;
-        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
-    });
-    var node;
-    while(node=walker.nextNode()){
-      var txt=node.nodeValue;
-      if(txt&&txt.indexOf('{{')>-1){
-        var changed=txt;
-        for(var ph in r){
-          if(r[ph]&&changed.indexOf(ph)>-1){
-            changed=changed.split(ph).join(r[ph]);
-          }
-        }
-        if(changed!==txt)node.nodeValue=changed;
-      }
-    }
-    var attrs=['value','placeholder','content','alt','title'];
-    attrs.forEach(function(attr){
-      var els=document.querySelectorAll('['+attr+'*="{{"]');
-      for(var i=0;i<els.length;i++){
-        var tag=els[i].tagName;
-        if(skipTags[tag])continue;
-        var val=els[i].getAttribute(attr);
-        if(val){
-          var nv=val;
-          for(var ph in r){
-            if(r[ph]&&nv.indexOf(ph)>-1){
-              nv=nv.split(ph).join(r[ph]);
-            }
-          }
-          if(nv!==val)els[i].setAttribute(attr,nv);
-        }
-      }
-    });
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-size:.7rem;text-transform:uppercase;letter-spacing:.22em;color:var(--teal);
+    margin-bottom:20px;
   }
-  function run(){
-    if(contactId){
-      var xhr=new XMLHttpRequest();
-      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=5746');
-      xhr.onload=function(){
-        if(xhr.status===200){
-          try{
-            var resp=JSON.parse(xhr.responseText);
-            if(resp.success&&resp.contact){
-              var merged=resp.contact;
-              for(var k in fields){merged[k]=fields[k];}
-              doReplace(merged);
-              return;
-            }
-          }catch(e){}
-        }
-        if(hasUrlFields)doReplace(fields);
-      };
-      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
-      xhr.send();
-    }else if(hasUrlFields){
-      doReplace(fields);
-    }
+  .eyebrow .pulse{
+    width:7px;height:7px;border-radius:50%;background:var(--teal);flex:none;
+    box-shadow:0 0 0 0 rgba(23,179,166,.6);animation:pulse 2.2s infinite;
   }
-  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
-  else{run();}
-})();
-</script>
-<script data-payment>
-(function(){
-  var slug='kCcTZf';
-  var apiBase='https://paymegpt.com';
-  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
-  function findEmail(){
-    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
-    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
-    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
-    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
-    return '';
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(23,179,166,.55)}
+    70%{box-shadow:0 0 0 10px rgba(23,179,166,0)}
+    100%{box-shadow:0 0 0 0 rgba(23,179,166,0)}
   }
-  function findName(){
-    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
-    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
-    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
-    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
-    return '';
+
+  h1.headline{
+    font-family:'Bricolage Grotesque',sans-serif;font-weight:800;
+    font-size:clamp(2.3rem,6vw,4.2rem);line-height:.94;color:var(--ink);
+    letter-spacing:-.03em;
   }
-  function findPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
-  var __realProcessPayment=function(a,b,c,d,e){
-    var amountCents,email,productName,productDescription,customerName,quantity;
-    if(a&&typeof a==='object'){
-      amountCents=a.amountCents;email=a.email;productName=a.productName;
-      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
-    }else{
-      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
-      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
-    }
-    if(!email)email=findEmail();
-    if(!customerName)customerName=findName();
-    var phone=findPhone();
-    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
-    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
-    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
-    var successBase=window.location.href.split('?')[0];
-    var __pLoc=(document.documentElement.lang||navigator.language||'en');
-    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
-      method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({email:email,name:customerName,phone:phone||'',amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
-    }).then(function(r){return r.json();}).then(function(d){
-      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
-      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
-    });
-  };
-  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
-  document.addEventListener('DOMContentLoaded',function(){
-    var urlParams=new URLSearchParams(window.location.search);
-    if(urlParams.get('payment')==='success'){
-      var sidP=urlParams.get('session_id');
-      if(sidP){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidP})}).catch(function(){});}catch(e){}}
-      var pName=urlParams.get('product')||'your item';
-      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
-      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
-      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
-      document.body.appendChild(overlay);
-      var pBtn=document.getElementById('lp-pay-success-btn');
-      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
-    }
-  });
-})();
-</script>
-<script data-cart>
-(function(){
-  var slug='kCcTZf';
-  var apiBase='https://paymegpt.com';
-  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
-  function findCartEmail(){
-    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
-    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
-    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
-    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
-    return '';
+  h1.headline em{font-style:normal;color:var(--teal)}
+  .hero-copy p.lede{
+    margin-top:20px;font-size:1.06rem;color:var(--ash);max-width:46ch;
+    font-family:'Archivo',sans-serif;text-transform:none;letter-spacing:0;line-height:1.62;
   }
-  function findCartName(){
-    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
-    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
-    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
-    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
-    return '';
+
+  /* ring-badge */
+  .ring-badge{position:relative;width:54px;height:54px;margin:28px 0 0}
+  .ring-badge svg.phone{position:relative;z-index:1;width:54px;height:54px;color:var(--teal)}
+  .ring{position:absolute;inset:0;border-radius:50%;border:1.5px solid var(--teal);animation:ringpulse 2.1s ease-out infinite}
+  .ring.r2{animation-delay:.7s}
+  .ring.r3{animation-delay:1.4s}
+  @keyframes ringpulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(2.1);opacity:0}}
+
+  .trust-row{display:flex;flex-direction:column;gap:13px;margin-top:46px;max-width:340px}
+  .trust-item{display:flex;align-items:flex-start;gap:11px;padding-bottom:13px;border-bottom:1px solid var(--hair-soft)}
+  .trust-item:last-child{border-bottom:none}
+  .trust-item svg{width:16px;height:16px;color:var(--teal);flex:none;margin-top:3px}
+  .trust-item span{font-size:.85rem;color:var(--ash);text-transform:none;letter-spacing:0;line-height:1.5}
+  .trust-item b{color:var(--ink);font-weight:600}
+
+  /* ── Demo panel ── */
+  .demo-panel{
+    position:relative;margin-top:4px;margin-left:0;
+    background:linear-gradient(170deg,var(--panel-hi),var(--panel));
+    border:1px solid var(--hair);border-top:2px solid var(--teal);
+    border-radius:14px;padding:0;box-shadow:0 36px 72px -28px rgba(0,0,0,.8);
+    overflow:hidden;
   }
-  function findCartPhone(){var ids=['phone','phoneNumber','phone-number','tel','telephone','mobile','mobileNumber','cell','contact-phone','buyer-phone'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.trim())return el.value.trim();}var inputs=document.querySelectorAll('input[type="tel"],input[name*="phone"],input[name*="tel"],input[name*="mobile"],input[placeholder*="phone"],input[placeholder*="Phone"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.trim())return inputs[j].value.trim();}return '';}
-  var __realCart=function(arg){
-    var items, email='', customerName='', successUrl, cancelUrl, currency;
-    if(Array.isArray(arg)){items=arg;}
-    else if(arg&&typeof arg==='object'){
-      items=arg.items;email=arg.email||'';customerName=arg.name||arg.customerName||'';
-      successUrl=arg.successUrl;cancelUrl=arg.cancelUrl;currency=arg.currency;
-    }
-    if(!Array.isArray(items)||items.length===0){alert('No items in cart.');return Promise.reject('no_items');}
-    var cleanItems=[];var totalCents=0;
-    for(var i=0;i<items.length;i++){
-      var it=items[i];if(!it||typeof it!=='object'){alert('Invalid item at position '+i);return Promise.reject('bad_item');}
-      var nm=typeof it.name==='string'?it.name.trim():'';
-      if(!nm){alert('Item '+(i+1)+' is missing a name.');return Promise.reject('no_name');}
-      var amt=typeof it.amountCents==='number'?it.amountCents:(typeof it.amount==='number'?Math.round(it.amount*100):NaN);
-      if(!isFinite(amt)||amt<1){alert('Item "'+nm+'" needs a valid amount in cents.');return Promise.reject('bad_amount');}
-      var qty=(typeof it.quantity==='number'&&it.quantity>0)?Math.floor(it.quantity):1;
-      cleanItems.push({name:nm,description:it.description||'',amountCents:amt,quantity:qty});
-      totalCents+=amt*qty;
-    }
-    if(totalCents<50){alert('Cart total must be at least $0.50');return Promise.reject('total_too_low');}
-    if(!email)email=findCartEmail();
-    if(!customerName)customerName=findCartName();
-    var cartPhone=findCartPhone();
-    if(!email){var p=window.prompt('Enter your email for the receipt:','');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert('An email address is required to complete checkout.');return Promise.reject('no_email');}}
-    var successBase=window.location.href.split('?')[0];
-    var body={email:email,name:customerName,items:cleanItems,locale:(document.documentElement.lang||navigator.language||'en')};
-    if(currency)body.currency=currency;
-    if(cartPhone)body.phone=cartPhone;
-    body.successUrl=successUrl||(successBase+'?cart=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}');
-    body.cancelUrl=cancelUrl||(successBase+'?cart=cancelled');
-    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/cart/checkout',{
-      method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify(body)
-    }).then(function(r){return r.json();}).then(function(d){
-      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
-      else{alert(d.error||'Failed to process checkout');throw new Error(d.error);}
-    });
-  };
-  try{Object.defineProperty(window,'__processCart',{value:__realCart,writable:false,configurable:false});}catch(e){window.__processCart=__realCart;}
-  document.addEventListener('DOMContentLoaded',function(){
-    var urlParams=new URLSearchParams(window.location.search);
-    if(urlParams.get('cart')==='success'){
-      var sidC=urlParams.get('session_id');
-      if(sidC){try{fetch(apiBase+'/api/landing-pages/public/'+slug+'/checkout/confirm',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({sessionId:sidC})}).catch(function(){});}catch(e){}}
-      if(document.getElementById('payment-success-overlay')||document.getElementById('donation-success-overlay')||document.getElementById('cart-success-overlay'))return;
-      var overlay=document.createElement('div');overlay.id='cart-success-overlay';
-      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
-      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
-      var subTxt=successSubtext||'Thank you for your order.';
-      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Order Confirmed!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-cart-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
-      document.body.appendChild(overlay);
-      var cBtn=document.getElementById('lp-cart-success-btn');
-      if(cBtn){cBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
-    }
-  });
-})();
-</script>  <link rel="stylesheet" href="styles.css">
+  .demo-head{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:15px 18px;border-bottom:1px solid var(--hair-soft);
+  }
+  .demo-title{font-size:.7rem;text-transform:uppercase;letter-spacing:.16em;color:var(--ash)}
+  .demo-title b{color:var(--ink)}
+  .replay-btn{
+    display:inline-flex;align-items:center;gap:6px;
+    background:rgba(23,179,166,.1);border:1px solid rgba(23,179,166,.32);color:var(--teal);
+    font-family:'Archivo',sans-serif;font-size:.69rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;
+    padding:7px 12px;border-radius:20px;cursor:pointer;transition:background .18s,border-color .18s,transform .18s;
+  }
+  .replay-btn:hover{background:rgba(23,179,166,.2);border-color:rgba(23,179,166,.55);transform:translateY(-1px)}
+  .replay-btn:active{transform:translateY(0)}
+  .replay-btn svg{width:13px;height:13px;transition:transform .5s ease}
+  .replay-btn.spin svg{transform:rotate(360deg)}
+
+  .thread{padding:18px 18px 8px;min-height:290px}
+  .bubble{
+    max-width:88%;padding:11px 14px;border-radius:10px;font-size:.91rem;line-height:1.52;
+    margin-bottom:10px;opacity:0;transform:translateY(10px) scale(.98);
+    transition:opacity .4s ease,transform .4s ease;
+  }
+  .bubble.show{opacity:1;transform:none}
+  .bubble .stamp{display:block;font-size:.66rem;color:var(--ash-dim);margin-top:6px;letter-spacing:.02em}
+  .bubble.caller{background:rgba(241,237,228,.06);border:1px solid var(--hair-soft);border-bottom-left-radius:3px}
+  .bubble.ai{background:linear-gradient(135deg,rgba(23,179,166,.22),rgba(14,138,127,.2));border:1px solid rgba(23,179,166,.3);margin-left:auto;border-bottom-right-radius:3px}
+  .badge{
+    display:inline-block;font-size:.63rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--void);background:var(--teal);
+    border-radius:6px;padding:3px 8px;margin-bottom:7px;
+  }
+  .typing{
+    display:flex;align-items:center;gap:4px;width:fit-content;margin-left:auto;margin-bottom:10px;
+    padding:10px 14px;border-radius:10px;background:rgba(23,179,166,.14);border:1px solid rgba(23,179,166,.25);
+    opacity:0;transition:opacity .25s ease;
+  }
+  .typing.show{opacity:1}
+  .typing span{width:5px;height:5px;border-radius:50%;background:var(--teal);animation:tdot 1.1s infinite ease-in-out}
+  .typing span:nth-child(2){animation-delay:.15s}
+  .typing span:nth-child(3){animation-delay:.3s}
+  @keyframes tdot{0%,60%,100%{opacity:.3;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+
+  .demo-foot{
+    display:flex;align-items:center;gap:8px;justify-content:space-between;flex-wrap:wrap;
+    padding:11px 18px 15px;border-top:1px solid var(--hair-soft);
+  }
+  .resp-time{display:flex;align-items:center;gap:7px;font-size:.7rem;color:var(--ash)}
+  .resp-time .dot{width:6px;height:6px;border-radius:50%;background:var(--teal)}
+  .disclaimer{font-size:.64rem;color:var(--ash-dim)}
+
+  /* ── The Math ── */
+  .math{
+    display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:end;
+    padding:60px 0 20px;border-top:1px solid var(--hair-soft);margin-top:52px;
+  }
+  .math .stat-label{font-size:.72rem;text-transform:uppercase;letter-spacing:.22em;color:var(--teal);margin-bottom:10px}
+  .stat-number{
+    font-family:'Bricolage Grotesque',sans-serif;font-weight:800;
+    font-size:clamp(3.4rem,10.5vw,7rem);line-height:.88;color:var(--ink);letter-spacing:-.03em;
+  }
+  .stat-number .sfx{color:var(--teal);font-size:clamp(1.1rem,3vw,2rem);font-weight:700;letter-spacing:-.01em;display:block;margin-top:6px}
+  .stat-replay{
+    display:inline-flex;align-items:center;gap:5px;margin-top:14px;
+    background:transparent;border:1px solid rgba(23,179,166,.3);color:var(--teal);
+    font-family:'Archivo',sans-serif;font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;
+    padding:5px 10px;border-radius:16px;cursor:pointer;transition:background .18s,border-color .18s;
+  }
+  .stat-replay:hover{background:rgba(23,179,166,.1);border-color:rgba(23,179,166,.5)}
+  .stat-replay svg{width:11px;height:11px}
+  .math-copy{font-size:1.04rem;color:var(--ash);max-width:48ch;padding-bottom:6px;line-height:1.65}
+  .math-copy strong{color:var(--ink);font-weight:600}
+  @media (max-width:820px){.math{grid-template-columns:1fr;gap:18px;padding-top:44px}}
+
+  /* ── How it works: asymmetric ── */
+  .how{padding:52px 0 20px;border-top:1px solid var(--hair-soft);margin-top:20px}
+  .how-head{display:flex;align-items:baseline;gap:16px;margin-bottom:32px;flex-wrap:wrap}
+  .how-head h2{font-size:clamp(1.6rem,3.8vw,2.4rem);color:var(--ink)}
+  .how-head span{font-size:.85rem;color:var(--ash);text-transform:none;letter-spacing:0}
+  .how-grid{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:auto auto;gap:14px}
+  .how-item{
+    border:1px solid var(--hair);border-radius:12px;padding:24px;background:rgba(241,237,228,.02);
+    transition:border-color .2s,background .2s,transform .2s;
+  }
+  .how-item:hover{border-color:rgba(23,179,166,.4);background:rgba(23,179,166,.05);transform:translateY(-3px)}
+  .how-item.lead{grid-row:1/3;display:flex;flex-direction:column;justify-content:space-between;min-height:270px}
+  .how-num{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2.4rem;color:var(--teal);line-height:1;margin-bottom:14px}
+  .how-item.lead .how-num{font-size:4rem}
+  .how-item h3{font-size:1.06rem;color:var(--ink);text-transform:none;letter-spacing:-.01em;font-family:'Archivo',sans-serif;font-weight:700;margin-bottom:8px}
+  .how-item.lead h3{font-size:1.46rem}
+  .how-item p{font-size:.88rem;color:var(--ash);text-transform:none;letter-spacing:0;line-height:1.58}
+  @media (max-width:820px){
+    .how-grid{grid-template-columns:1fr}
+    .how-item.lead{grid-row:auto;min-height:auto}
+  }
+
+  /* ── CTA ── */
+  .cta-section{padding:66px 0 56px}
+  .cta-panel{
+    position:relative;border-radius:18px;overflow:hidden;
+    background:linear-gradient(148deg,var(--panel-hi) 0%,var(--panel) 62%,var(--void) 100%);
+    border:1px solid var(--hair);padding:50px 32px;text-align:left;
+  }
+  .cta-panel::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:radial-gradient(520px 280px at 86% -12%, rgba(23,179,166,.18), transparent 64%);
+  }
+  .cta-inner{position:relative;z-index:1;max-width:620px}
+  .cta-panel h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(1.85rem,4.4vw,3rem);color:var(--ink);line-height:1.04;margin-bottom:16px;letter-spacing:-.02em}
+  .cta-panel h2 em{font-style:normal;color:var(--teal)}
+  .cta-panel p{font-size:.98rem;color:var(--ash);max-width:50ch;margin-bottom:28px;text-transform:none;letter-spacing:0;line-height:1.6}
+  .cta-btn{
+    display:inline-flex;align-items:center;gap:10px;
+    font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:1.06rem;text-transform:uppercase;letter-spacing:.03em;
+    color:var(--void);background:var(--teal);
+    border-radius:10px;padding:16px 28px;text-decoration:none;
+    box-shadow:0 16px 36px -12px rgba(23,179,166,.5);
+    transition:transform .2s ease,box-shadow .2s ease,filter .2s ease;
+  }
+  .cta-btn:hover{transform:translateY(-3px);box-shadow:0 20px 44px -12px rgba(23,179,166,.68);filter:brightness(1.08)}
+  .cta-btn svg{width:17px;height:17px;transition:transform .2s ease}
+  .cta-btn:hover svg{transform:translate(3px,-2px)}
+  .cta-note{font-size:.74rem;color:var(--ash-dim);margin-top:14px;text-transform:none;letter-spacing:0}
+
+  /* ── Footer ── */
+  footer{padding:34px 0 48px;border-top:1px solid var(--hair-soft)}
+  .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;font-size:.78rem;color:var(--ash-dim)}
+  .foot a{color:var(--teal);text-decoration:none}
+  .quietline{font-size:.84rem;font-style:italic;color:var(--ash);max-width:56ch;margin-bottom:14px;line-height:1.55}
+
+  /* ── Reveal-on-scroll ── */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.visible{opacity:1;transform:none}
+
+  /* ── Sticky mobile CTA bar (A1) ── */
+  .mobile-cta-bar{
+    display:none;position:fixed;bottom:0;left:0;right:0;z-index:9000;
+    background:var(--teal);padding:14px 22px calc(14px + env(safe-area-inset-bottom, 0px));
+    text-align:center;
+  }
+  .mobile-cta-bar a{
+    color:var(--void);font-family:'Bricolage Grotesque',sans-serif;font-weight:800;
+    font-size:.95rem;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;
+  }
+  @media (max-width:820px){
+    .mobile-cta-bar{display:block}
+  }
+
+  /* ── Reduced motion: kill spatial transforms, keep opacity + count-up ── */
+  @media (prefers-reduced-motion:reduce){
+    /* Do NOT add opacity:1!important or transition:none here.
+       Keeps sequential crossfade and count-up for reduced-motion users. */
+    .bubble,.typing,.reveal{transform:none!important}
+    .ring,.pulse,.replay-btn.spin svg{animation:none!important}
+  }
+</style>
 </head>
 <body>
 
@@ -524,15 +502,304 @@
   <a href="https://aidmarketingagency.github.io/aid-discovery-call/" target="_blank" rel="noopener">Book 15 minutes with Ryan</a>
 </div>
 
+<script>
+(function(){
 
+  // ── SMS thread: playIO + rearmIO (two separate IntersectionObservers, mandatory) ──
+  var thread = document.getElementById('thread');
+  var bubbles = Array.prototype.slice.call(thread.querySelectorAll('.bubble'));
+  var typers = {1: document.getElementById('typing1'), 2: document.getElementById('typing2')};
+  var replayBtn = document.getElementById('replayBtn');
+  var timers = [];
+  var playing = false;
+
+  function clearTimers(){ timers.forEach(function(t){ clearTimeout(t); }); timers = []; }
+
+  function resetThread(){
+    bubbles.forEach(function(b){ b.classList.remove('show'); });
+    Object.keys(typers).forEach(function(k){ typers[k].classList.remove('show'); });
+  }
+
+  // D4 SMS timing: bubble 1 ~1.0s, AI reply ~3.5s, caller ~6.5s, AI ~9.0s
+  function playThread(){
+    if (playing) return;
+    playing = true;
+    clearTimers();
+    resetThread();
+    var seq = [
+      {t: 300,  fn: function(){ bubbles[0].classList.add('show'); }},
+      {t: 1000, fn: function(){ typers[1].classList.add('show'); }},
+      {t: 2400, fn: function(){ typers[1].classList.remove('show'); bubbles[1].classList.add('show'); }},
+      {t: 3800, fn: function(){ bubbles[2].classList.add('show'); }},
+      {t: 4600, fn: function(){ typers[2].classList.add('show'); }},
+      {t: 6000, fn: function(){ typers[2].classList.remove('show'); bubbles[3].classList.add('show'); playing = false; }}
+    ];
+    seq.forEach(function(step){ timers.push(setTimeout(step.fn, step.t)); });
+  }
+
+  replayBtn.addEventListener('click', function(){
+    replayBtn.classList.add('spin');
+    setTimeout(function(){ replayBtn.classList.remove('spin'); }, 520);
+    playing = false;
+    playThread();
+  });
+
+  // Two observers: playIO (plays once on entry) + rearmIO (resets on full exit)
+  var _armed = true;
+  function _autoplay(){
+    if (!_armed) return;
+    _armed = false;
+    playing = false;
+    playThread();
+  }
+
+  if ('IntersectionObserver' in window){
+    var playIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting && e.intersectionRatio >= 0.15){ _autoplay(); }
+      });
+    }, { threshold: 0.18 });
+    playIO.observe(thread);
+
+    var rearmIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting){ clearTimers(); resetThread(); playing = false; _armed = true; }
+      });
+    }, { threshold: 0 });
+    rearmIO.observe(thread);
+
+    // Already in viewport at load: play immediately via getBoundingClientRect check
+    var _r = thread.getBoundingClientRect();
+    var _vh = window.innerHeight || document.documentElement.clientHeight;
+    var _vis = Math.min(_r.bottom, _vh) - Math.max(_r.top, 0);
+    if (_r.height > 0 && _vis / _r.height >= 0.15){ _autoplay(); }
+  } else {
+    playThread();
+  }
+
+  // ── Reveal-on-scroll for sections ──
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window){
+    var revealIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('visible'); revealIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(function(el){ revealIO.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('visible'); });
+  }
+
+  // ── Animated stat counter (target $12,000) with replay ──
+  // Source: oldtimersroofing.com/north-carolina-roof-insurance-changes-2026/
+  var statEl = document.getElementById('statNumber');
+  var statSfx = document.getElementById('statSfx');
+  var statReplayBtn = document.getElementById('statReplayBtn');
+  var countRun = 0;
+
+  function runCount(){
+    var thisRun = ++countRun;
+    var target = 12000;
+    var prefix = '$';
+    var dur = 1500;
+    var start = null;
+    function step(ts){
+      if (thisRun !== countRun) return; // superseded run, die
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / dur, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      var val = Math.round(eased * target);
+      // Update just the text node before the suffix span
+      var formatted = prefix + val.toLocaleString('en-US');
+      // rebuild: text node + sfx span
+      while (statEl.firstChild && statEl.firstChild !== statSfx){ statEl.removeChild(statEl.firstChild); }
+      var tn = document.createTextNode(formatted);
+      statEl.insertBefore(tn, statSfx);
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    // Reset display
+    while (statEl.firstChild && statEl.firstChild !== statSfx){ statEl.removeChild(statEl.firstChild); }
+    statEl.insertBefore(document.createTextNode(prefix + '0'), statSfx);
+    requestAnimationFrame(step);
+  }
+
+  if (statEl && 'IntersectionObserver' in window){
+    var statIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ runCount(); statIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.35 });
+    statIO.observe(statEl);
+  }
+
+  if (statReplayBtn){
+    statReplayBtn.addEventListener('click', function(){ runCount(); });
+  }
+
+  // ── Mobile sticky CTA: hide while real CTA panel is in view (A1) ──
+  var mobileCtaBar = document.getElementById('mobileCta');
+  var ctaSection = document.querySelector('.cta-section');
+  if (mobileCtaBar && ctaSection && 'IntersectionObserver' in window){
+    var ctaIO = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        mobileCtaBar.style.display = e.isIntersecting ? 'none' : '';
+      });
+    }, { threshold: 0.05 });
+    ctaIO.observe(ctaSection);
+  }
+
+})();
+</script>
 
 <!-- AID demo concierge (shared widget 54722168) + data-aid-widget-boost sheeted desktop fix (7/21) -->
 <script src="https://paymegpt.com/widget.js" data-widget="54722168" async></script>
-
+<script data-aid-widget-boost>
+(function(){
+  var WID='54722168';
+  var IMG='https://paymegpt.com/api/files/avatar/widget_avatar_mcp_widget_54722168_1784002747499.png';
+  function mobile(){return window.innerWidth<769;}
+  var full=false, fsBtn=null;
+  function container(){return document.getElementById('ultra-fast-widget-container-'+WID);}
+  function bubble(){return document.getElementById('ultra-fast-widget-bubble-'+WID);}
+  function isOpen(){var c=container();return !!(c&&getComputedStyle(c).display!=='none');}
+  /* Mobile: chat opens as a bottom sheet, not a fullscreen takeover. The expand
+     button toggles true fullscreen. Inline !important beats the widget's own CSS. */
+  function sheet(c){
+    if(!mobile()||full){unsheet(c);return;}
+    var s=c.style;
+    s.setProperty('top','auto','important');s.setProperty('bottom','10px','important');
+    s.setProperty('left','8px','important');s.setProperty('right','8px','important');
+    s.setProperty('width','auto','important');s.setProperty('height','72vh','important');
+    s.setProperty('max-height','72vh','important');s.setProperty('border-radius','16px','important');
+    sheeted=true;
+  }
+  var sheeted=false;
+  function unsheet(c){
+    if(!sheeted)return;
+    ['top','bottom','left','right','width','height','max-height','border-radius'].forEach(function(p){c.style.removeProperty(p);});
+    sheeted=false;
+  }
+  function ensureFsBtn(c){
+    if(!mobile()){if(fsBtn&&fsBtn.parentNode){fsBtn.parentNode.removeChild(fsBtn);fsBtn=null;}return;}
+    if(fsBtn&&c.contains(fsBtn))return;
+    fsBtn=document.createElement('button');
+    fsBtn.type='button';fsBtn.setAttribute('aria-label','Toggle full screen');
+    fsBtn.innerHTML='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M8 3H3v5"/><path d="M16 3h5v5"/><path d="M8 21H3v-5"/><path d="M16 21h5v-5"/></svg>';
+    fsBtn.style.cssText='position:absolute;top:9px;left:10px;z-index:2147483647;width:34px;height:34px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.3);border-radius:9px;cursor:pointer;';
+    fsBtn.addEventListener('click',function(e){
+      e.stopPropagation();full=!full;var c2=container();
+      if(c2){if(full){unsheet(c2);}else{sheet(c2);}}
+    });
+    c.appendChild(fsBtn);
+  }
+  function sync(){
+    var b=bubble();
+    if(!b)return;
+    var open=isOpen();
+    if(open){try{sessionStorage.setItem('aidWidgetAutoOpened','1');}catch(e){}}
+    var img=b.querySelector('img[data-aid-icon]');
+    if(open){if(img){img.remove();b.style.background='';}}
+    else if(!img){
+      img=document.createElement('img');
+      img.src=IMG;img.alt='';img.setAttribute('data-aid-icon','');
+      img.style.cssText='width:100%;height:100%;object-fit:cover;border-radius:50%;position:absolute;top:0;left:0;pointer-events:none;';
+      b.style.background='#0D0D0F';
+      b.appendChild(img);
+    }
+    var c=container();
+    if(c){
+      if(open){ensureFsBtn(c);sheet(c);}
+      else{full=false;unsheet(c);}
+    }
+  }
+  var armed=false;
+  function autoOpen(){
+    if(armed)return;
+    var b=bubble();
+    if(!b)return;
+    armed=true;
+    try{if(sessionStorage.getItem('aidWidgetAutoOpened'))return;}catch(e){}
+    setTimeout(function(){
+      try{if(sessionStorage.getItem('aidWidgetAutoOpened'))return;}catch(e){}
+      try{sessionStorage.setItem('aidWidgetAutoOpened','1');}catch(e){}
+      if(!isOpen())b.click();
+    },20000);
+  }
+  setInterval(function(){sync();autoOpen();},400);
+})();
+</script>
 
 <!-- AID teaser bubble + auto-open schedule (v3, 2026-07-22) -->
+<script>
+(function () {
+  var WID = '54722168';
+  var BUBBLE_ID = 'ultra-fast-widget-bubble-' + WID;
+  var OPEN_KEY = 'aidWidgetAutoOpened';
+  var LEGACY_KEY = 'aidDemoWidgetAutoOpened';
+  var TEASER_KEY = 'aidTeaserShown';
+  var TEASER_AT = 10;
+  var OPEN_AT = 20;
+  var hasBoost = !!document.querySelector('[data-aid-widget-boost]');
+  function bubble() { return document.getElementById(BUBBLE_ID); }
+  function isOpen() {
+    var c = document.getElementById('ultra-fast-widget-container-' + WID);
+    return !!(c && getComputedStyle(c).display !== 'none');
+  }
+  function alreadyOpened() {
+    try { return !!(sessionStorage.getItem(OPEN_KEY) || sessionStorage.getItem(LEGACY_KEY)); } catch (e) { return false; }
+  }
+  var teaser = null;
+  var userTouched = false;
+  document.addEventListener('click', function (e) {
+    if (e.isTrusted && e.target && e.target.closest && e.target.closest('#' + BUBBLE_ID)) {
+      userTouched = true; hideTeaser();
+    }
+  }, true);
+  function hideTeaser() {
+    if (!teaser) return;
+    var t = teaser; teaser = null; t.style.opacity = '0';
+    setTimeout(function () { if (t.parentNode) t.parentNode.removeChild(t); }, 450);
+  }
+  function openChat() { hideTeaser(); var b = bubble(); if (b && !isOpen()) b.click(); }
+  function showTeaser() {
+    if (teaser || userTouched || isOpen() || alreadyOpened()) return;
+    try { if (sessionStorage.getItem(TEASER_KEY)) return; sessionStorage.setItem(TEASER_KEY, '1'); } catch (e) {}
+    var d = document.createElement('div');
+    d.setAttribute('data-aid-teaser', '');
+    d.setAttribute('role', 'button');
+    d.setAttribute('tabindex', '0');
+    d.style.cssText = 'position:fixed;right:20px;bottom:98px;z-index:999998;max-width:250px;background:#141419;color:#F4F4F5;padding:13px 32px 13px 16px;border-radius:16px;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);box-shadow:0 12px 28px rgba(0,0,0,.5);font:500 14px/1.45 -apple-system,sans-serif;cursor:pointer;opacity:0;transform:translateY(10px);transition:opacity .5s ease,transform .5s ease;';
+    var txt = document.createElement('p');
+    txt.style.cssText = 'margin:0;';
+    txt.textContent = "Give your customers AN OFFER they can't refuse!";
+    var x = document.createElement('button');
+    x.type = 'button'; x.setAttribute('aria-label', 'Dismiss'); x.textContent = '\xd7';
+    x.style.cssText = 'position:absolute;top:2px;right:6px;background:transparent;border:none;color:rgba(244,244,245,.55);font-size:18px;line-height:1;cursor:pointer;padding:2px 4px;';
+    x.addEventListener('click', function (e) { e.stopPropagation(); hideTeaser(); });
+    var arrow = document.createElement('span');
+    arrow.style.cssText = 'position:absolute;bottom:-7px;right:26px;width:12px;height:12px;background:#141419;border-right:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-bottom:1px solid color-mix(in srgb,var(--accent) 45%,transparent);transform:rotate(45deg);';
+    d.appendChild(txt); d.appendChild(x); d.appendChild(arrow);
+    d.addEventListener('click', function (e) { if (e.target === x) return; e.stopPropagation(); openChat(); });
+    d.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openChat(); } });
+    document.body.appendChild(d); teaser = d;
+    requestAnimationFrame(function () { d.style.opacity = '1'; d.style.transform = 'translateY(0)'; });
+  }
+  var ticks = 0;
+  var timer = setInterval(function () {
+    ticks += 1;
+    if (isOpen()) { hideTeaser(); if (hasBoost || ticks >= OPEN_AT) clearInterval(timer); return; }
+    var b = bubble();
+    if (b && ticks >= TEASER_AT) showTeaser();
+    if (!hasBoost && b && ticks >= OPEN_AT) {
+      clearInterval(timer); hideTeaser();
+      var guard = alreadyOpened();
+      try { sessionStorage.setItem(LEGACY_KEY, '1'); } catch (e) {}
+      if (!guard && !userTouched && !isOpen()) b.click();
+    }
+    if (ticks > 60) clearInterval(timer);
+  }, 1000);
+})();
+</script>
 
-
-  <script src="script.js"></script>
 </body>
 </html>
